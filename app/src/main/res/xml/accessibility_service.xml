@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- flagRetrieveInteractiveWindows is required: without it getWindows() does not return other
+     apps' windows, so the field behind our own dictation screen cannot be reached. -->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeViewFocused"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:canRetrieveWindowContent="true"
+    android:accessibilityFlags="flagRetrieveInteractiveWindows"
+    android:description="@string/a11y_description"
+    android:notificationTimeout="100" />

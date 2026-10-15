@@ -1,0 +1,96 @@
+{
+  "catalog_version": 2,
+  "generated_at": "2026-09-22T20:42:43+00:00",
+  "mirrors": [
+    "https://blob.handy.computer"
+  ],
+  "comment": "Current-generation LLM catalog for the local editor. Files carry sha256, so ModelDownloader tries huggingface.co first and the mirrors second. Filenames/sizes/hashes were read from the HF tree API; the E4B entry on 2026-10-14.",
+  "models": [
+    {
+      "id": "unsloth/gemma-4-E4B-it-qat-GGUF",
+      "revision": "main",
+      "description": "Gemma 4 E4B (QAT) - recommended: follows the edit format reliably",
+      "homepage_url": "https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF",
+      "recommended_rank": 1,
+      "speed_score": 58,
+      "default_quant": "UD-Q4_K_XL",
+      "capabilities": {
+        "streaming": true
+      },
+      "languages": [
+        "en"
+      ],
+      "files": [
+        {
+          "filename": "gemma-4-E4B-it-qat-UD-Q4_K_XL.gguf",
+          "quant": "UD-Q4_K_XL",
+          "size_bytes": 4215695776,
+          "sha256": "df0fd4ee07072c607c29a0a1cb4f98918426cca12f45a2776bdd6ee6d09a4de3"
+        },
+        {
+          "filename": "gemma-4-E4B-it-qat-UD-Q2_K_XL.gguf",
+          "quant": "UD-Q2_K_XL",
+          "size_bytes": 3219532192,
+          "sha256": "79dde517866cfbb5c00230b530de17910fc7fc78f8827554d0e14281ce5faf03"
+        }
+      ]
+    },
+    {
+      "id": "unsloth/gemma-4-E2B-it-qat-GGUF",
+      "revision": "main",
+      "description": "Gemma 4 E2B (QAT) - best instruction following of the local editors",
+      "homepage_url": "https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF",
+      "recommended_rank": 2,
+      "speed_score": 74,
+      "default_quant": "UD-Q4_K_XL",
+      "capabilities": {
+        "streaming": true
+      },
+      "languages": [
+        "en"
+      ],
+      "files": [
+        {
+          "filename": "gemma-4-E2B-it-qat-UD-Q4_K_XL.gguf",
+          "quant": "UD-Q4_K_XL",
+          "size_bytes": 2620370976,
+          "sha256": "e531007218dfab990486a5de7676a6932d6ea8dea233d1f698d7c21cf8a16889"
+        },
+        {
+          "filename": "gemma-4-E2B-it-qat-UD-Q2_K_XL.gguf",
+          "quant": "UD-Q2_K_XL",
+          "size_bytes": 2186186784,
+          "sha256": "0a5bbc20f91f92da96ab4870fa71b356c45b8500a7b8b9c3e0eb48359b72da28"
+        }
+      ]
+    },
+    {
+      "id": "LiquidAI/LFM2.5-2.6B-GGUF",
+      "revision": "main",
+      "description": "Liquid LFM2.5 2.6B QAD - not recommended: prefers tool-call output over the edit format",
+      "homepage_url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF",
+      "speed_score": 90,
+      "default_quant": "QAD-Q4_0",
+      "capabilities": {
+        "streaming": true
+      },
+      "languages": [
+        "en"
+      ],
+      "files": [
+        {
+          "filename": "LFM2.5-2.6B-QAD-Q4_0.gguf",
+          "quant": "QAD-Q4_0",
+          "size_bytes": 1593894944,
+          "sha256": "a247afd6414918eac8e520a9e6137dc271235461ecbe1180462221d5b8d40b03"
+        },
+        {
+          "filename": "LFM2.5-2.6B-Q4_K_M.gguf",
+          "quant": "Q4_K_M",
+          "size_bytes": 1674455040,
+          "sha256": "02a8b7e17487d326e46d68ce0ba24211e1b80a14c4cd0597fa73c1cd697f52ed"
+        }
+      ]
+    }
+  ]
+}

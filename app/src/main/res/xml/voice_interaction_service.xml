@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<voice-interaction-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sessionService="com.example.speechbridge.assist.BridgeSessionService"
+    android:recognitionService="com.example.speechbridge.recognition.BridgeRecognitionService"
+    android:settingsActivity="com.example.speechbridge.MainActivity"
+    android:supportsAssist="true"
+    android:supportsLaunchVoiceAssistFromKeyguard="false" />

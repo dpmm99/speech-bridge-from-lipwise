@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Speech Bridge</string>
+    <string name="a11y_description">Lets Speech Bridge read the text field you are dictating into, so spoken corrections like "no, I said Alana" can fix text you already dictated. Password fields are ignored. Optional.</string>
+</resources>

@@ -1,0 +1,28 @@
+# Gradle and Android build output
+.gradle/
+build/
+.kotlin/
+cxx/
+captures/
+local.properties
+*.iml
+.idea/
+
+# Native build trees, produced by scripts/build-native.sh
+native-build/
+native-build-stt/
+native-build-stt-jni/
+
+# Staged native binaries. These are build products of scripts/build-native.sh
+# (~63 MB), and they embed MIT-licensed third-party code, so they are not
+# committed: run the script to produce them.
+app/src/main/jniLibs/
+
+# Models and partial downloads never belong in the repo (the app fetches them at
+# runtime, each under its own license)
+*.gguf
+*.part
+
+# Editor and OS noise
+.DS_Store
+*.swp
